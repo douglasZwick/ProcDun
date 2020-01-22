@@ -34,7 +34,7 @@ public class EnemyChaseLogic : MonoBehaviour
     void Update()
     {
         //No reference to player, Nothing to chase
-        if (Player == null || !Player.gameObject.active)
+        if (Player == null || !Player.gameObject.activeInHierarchy)
         {
             RB.velocity = Vector2.zero;
             Aggroed = false;
